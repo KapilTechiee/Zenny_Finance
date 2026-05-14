@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-enq^tgd4=s-9msaa=k5o#)rm=^s85*b*k99p--)mvz5nyg0+l%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['zenny-finance.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
