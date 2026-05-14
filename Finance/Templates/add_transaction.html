@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Add Transaction{% endblock title %}
+
+{% block body %}
+<div class="container py-5">
+  <div class="card shadow-lg p-4 rounded-4 border-0">
+    
+    <h3 class="mb-3 fw-bold">Add Transaction</h3>
+
+    <form method="post" novalidate>
+      {% csrf_token %}
+
+      {{ form.as_p }}
+
+      <button type="submit" class="btn btn-primary">
+        Save
+      </button>
+
+      <a href="{% url 'transactions' %}" class="btn btn-secondary ms-2">
+        Cancel
+      </a>
+    </form>
+
+  </div>
+</div>
+{% endblock body %}
